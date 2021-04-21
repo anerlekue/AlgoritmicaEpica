@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class LinearSearch {
 
 		public int v;
-		public int [] lista = new int [10];
+		public int [] lista = new int [100];
 		
 		public LinearSearch(int v, int[]lista) {
 			this.v = v;
@@ -22,7 +22,7 @@ public class LinearSearch {
 		public String linear_search(int [] lista, int v) {		
 			for(int i = 0;i<lista.length ;i++) {
 				if (lista[i]==v) {
-					return (lista[i]+" Its on the list bro");
+					return ("\n"+lista[i]+" Its on the list");
 				}				
 			}		
 			return "\nNull";
@@ -31,9 +31,9 @@ public class LinearSearch {
 		
 		public static void main(String[] args) {
 			Scanner scanner = new Scanner(System.in);
-			int [] lista = new int [10];		
+			int [] lista = new int [100];		
 			
-			System.out.println("What number you want to find?");
+			System.out.println("What number you looking for?");
 			String numAsked = scanner.nextLine();
 			int v = Integer.parseInt(numAsked);  //Change from string to int
 			
