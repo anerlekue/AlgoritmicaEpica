@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class LinearSearch {
 
 		public int v;
-		public int [] lista = new int [100];
+		public int [] lista = new int [10];
 		
 		public LinearSearch(int v, int[]lista) {
 			this.v = v;
@@ -30,8 +30,10 @@ public class LinearSearch {
 		}
 		
 		public static void main(String[] args) {
+			@SuppressWarnings("resource") //just to remove the warning from the scanner variable
+			
 			Scanner scanner = new Scanner(System.in);
-			int [] lista = new int [100];		
+			int [] lista = new int [10];		
 			
 			System.out.println("What number you looking for?");
 			String numAsked = scanner.nextLine();
@@ -39,7 +41,7 @@ public class LinearSearch {
 			
 			LinearSearch ln = new LinearSearch(v, lista);
 			
-			System.out.println("Disordered List:");
+			System.out.println("List of numbers:");
 			ln.rellenarLista(lista);
 			
 			System.out.println("\n"+ln.linear_search(lista, v));
