@@ -25,7 +25,7 @@ public class LinearSearch {
 					return ("\n"+lista[i]+" Its on the list");
 				}				
 			}		
-			return "\nNull";
+			return "\nNot found";
 			
 		}
 		
