@@ -41,7 +41,7 @@ public class LinearSearch {
 			
 			LinearSearch ln = new LinearSearch(v, lista);
 			
-			System.out.println("List of numbers:");
+			System.out.println("\nList of numbers:");
 			ln.rellenarLista(lista);
 			
 			System.out.println("\n"+ln.linear_search(lista, v));

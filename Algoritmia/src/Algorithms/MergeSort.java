@@ -17,7 +17,7 @@ public class MergeSort {
 		System.out.println("\n");
 	    System.out.println("Ordered list:");
 	    
-	    MergeSort2(lista, 0, lista.length);
+	    MergeSort2(lista, 0, lista.length-1);
 	    for(int x = 0; x<lista.length ;x++) { 		//Fills the array with random numbers between 1 to 100		
 			System.out.print(lista[x]+" ");	
 			}	    
@@ -39,14 +39,15 @@ public class MergeSort {
 	    	int n2=r-q;
 	    	int L []= new int[n1+1];
 	    	int R []= new int[n2+1];
-	    	for(int i=0;i<=n1;i++) {
+	    	for(int i=0;i<n1;i++) {
 	    		L[i]=lista[p+i];
 	    		}
-	    	L[n1]= Integer.MAX_VALUE;
-	    	for(int j=0;j<=n2;j++) {
+	    	
+	    	for(int j=0;j<n2;j++) {
 	    		R[j]=lista[q+j+1];
 	    		}
-	    	R[n2+1]= Integer.MAX_VALUE;
+	    	L[n1]= Integer.MAX_VALUE;
+	    	R[n2]= Integer.MAX_VALUE;
 	    	
 	    	int i=0;
 	    	int j=0;

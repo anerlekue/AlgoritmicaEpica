@@ -24,7 +24,7 @@ public class SelectionSort {
 					if (lista[j]<lista[minIndex]) {
 						minIndex = j;
 					}
-				}//esto es el swap 
+				}//Swap
 				int k=lista[i];
 	    		lista[i]=lista[minIndex];
 	    		lista[minIndex]=k;
